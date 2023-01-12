@@ -4,8 +4,16 @@ const nextConfig = {
   swcMinify: true,
 
   images: {
-    domains: ['files.stripe.com'],
+    domains: [
+      'files.stripe.com'
+    ]
   },
-};
 
-module.exports = nextConfig;
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  }
+}
+
+module.exports = nextConfig
